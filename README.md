@@ -77,7 +77,7 @@ void loop() {
 ![circuito-2](assets/images/circuito-2.jpg)
 <sub>Fonte immagine: produzione propria dell'autore.</sub>
 
-![circuito-3](assets/images/circuito-3-jpg)
+![circuito-3](assets/images/circuito-3.jpg)
 <sub>Fonte immagine: produzione propria dell'autore.</sub>
 
 ![screenshot-1](assets/images/screenshot-1.png)
