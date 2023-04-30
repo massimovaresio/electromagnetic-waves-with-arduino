@@ -222,7 +222,7 @@ Sebbene la maggior parte dei sistemi radar utilizzino le onde radio per tracciar
 
 ### Componenti necessari
 - 1 circuito sensore di luminosità dell'esperimento precedente
-- 1 condensatore 100 microfarad
+- 1 condensatore 100 μf
 - 1 servomotore
 - nastro adesivo
 - cavi jumper aggiuntivi
@@ -239,7 +239,16 @@ Circuito costruito con servo motore.
 ![circuito-5.](assets/images/)
 <sub>Fonte immagine: produzione propria dell'autore.</sub>
 
+### Scansione manuale della luce
+In questo esperimento, programmeremo il radar a onde luminose per scansionare la stanza e mappare la luce ambientale. Il sistema radar ad onde luminose costruito sarà uno scanner manuale che si muove leggendo i comandi attraverso il monitor seriale. Aumenteremo l'angolo del servo inviando un segno più (+) e lo diminuiremo inviando un segno meno (-).
 
+Nota: per chi non lo sapesse, è bene precisare che il monitor seriale dell'IDE Arduino può essere utilizzato sia come uno strumento di output per visualizzare informazioni e dati, sia per inserire informazioni e dire alla scheda Arduino UNO R3 cosa fare. Si parla in questo secondo caso di input seriali.
+
+Dopo aver inserito il servo nel circuito, è necessario importare la [libreria servo di Arduino](https://github.com/arduino-libraries/Servo) nello sketch, digitando il comando `#include <Servo.h>` all'inizio dello sketch. Per memorizzare l'angolo del servo e per memorizzare i dati immessi dal monitor seriale avremo bisogno di inserire due nuove variabili: `servoAngle` e `inputCommand`. Nella parte inziale dello sketch dovremo inoltre creare un oggetto servo, che chiamiamo `myServo`.
+La funzione `void loop` inizia controllando se sono stati inviati e archiviati dati nel buffer seriale (memoria volatile del microcontrollore della scheda Arduino UNO R3). Il comando `Serial.available()` verificherà se ci siano o meno dati memorizzati. Se ci sono dati memorizzati nel buffer, il comando restituirà uno 1. Se il buffer seriale invece è vuoto, restituirà uno 0. Nel caso in cui ci siano dati memorizzati nel buffer, lo sketch allora dovrà eseguire alcuni comandi. Inserendo questo comando in un'istruzione if, lo sketch allora eseguirà altri comandi se il buffer contiene dati. Se ci sono dati memorizzati nel buffer seriale, dovranno essere letti. Il comando `Serial.read()` esamina il primo byte di dati nel buffer seriale, in altre parole, legge il primo carattere immesso nel monitor seriale e restituisce il valore in byte di quel carattere. Programmeremo Arduino in modo che accetti due differenti comandi dal monitor seriale: un comando per aumentare l'angolo del servo e un comando per ridurlo. Come anticipato, utilizziamo un segno più (+) per aumentare l'angolo e un segno meno (-) per ridurlo.
+Arduino procederà con due comportamenti diversi a seconda del comando immesso (+ o -) nel monitor seriale. È possibile utilizzare una funzione `switch-case` sulla variabile `inputCommand` per definire ciascun comportamento.
+È importante tenere a mente che il servo motore ha un angolo massimo di rotazione di 180°;  dovremo quindi scrivere una condizione che imposti il `servoAngle` al massimo, cioè 180 se la variabile `servoAngle` è maggiore o uguale a 180. Per evitare di sbagliarci, creeremo una sorta di indicatore visivo per segnalare quando il servo raggiunge il suo limite: useremo come indicatore un LED all'interno del circuito.
+Ogni volta che il servo di sposta, in seguito ai comandi inviati, la misurazione del sensore di luce sarà letta mediante comando `analogRead()` e il valore sarà visibile sul monitor seriale dell'IDE Arduino. Si osserverà come il valore di misurazione cambia con il variare dell'angolo del servo motore.
 
 
  
