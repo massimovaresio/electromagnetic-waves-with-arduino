@@ -175,6 +175,39 @@ Tornati sulla Terra, con un forte laser puntato sullo specchio inviarono impulsi
 ![nasa-luna.](assets/images/)
 <sub>Fonte immagine: [Arduino Student Kit](https://www.arduino.cc/education/student-kit).</sub>
 
+## Parte 1 - Sensore di luminosità
+Inserire testo articolo.
+
+## Invenzioni importanti
+### Energia elettromagnetica
+Tutte le moderne tecnologie di comunicazione trovano origine nelle teorie sull'elettromagnetismo e nella distribuzione dei segnali. È grazie a geni del passato come *Michael Faraday* e *James Clerk Maxwell* se oggi possiamo comunicare con qualcuno dall'altra parte del mondo semplicemente con un click sul nostro smartphone e avere una risposta in una frazione di secondo.
+
+> *Faraday* è uno dei più grandi scienziati britannici di tutti i tempi e grazie al suo instancabile lavoro di ricerca pose le basi per tutti i successivi studi legati all’elettromagnetismo. Scopritore dell’induzione elettromagnetica, nonché di molteplici fenomeni fisici legati all’elettricità.
+
+> *Maxwell*, colui che definì la luce. Fisico e matematico scozzese vissuto nel 19esimo secolo, è il padre della moderna teoria dell’elettromagnetismo e colui che per primo definì la luce come un’onda elettromagnetica in grado di muoversi anche nel vuoto. Grazie a quelle che oggi sono note come “equazioni di Maxwell”, lo scienziato permise di riunire in un unico modello i fenomeni elettrici e quelli magnetici.
+
+Non si tratta ovviamente di contribuiti isolati... Molti altri scienziati hanno assunto ruoli fondamentali nello sviluppo e nella diffusione di queste tecnologie, fino ad arrivare al giorno d'oggi.
+
+A partire dall'epoca di *Faraday* si fece strada una nuova immagine dell'universo. Gli scienziati avevano iniziato a sospettare, infatti, che le forze dell'elettricità e del magnetismo (insieme chiamate energia elettromagnetica) viaggiassero attraverso lo spazio come onde invisibili.
+
+![onda-elettromagnetica.](assets/images/)
+<sub>Fonte immagine: [Arduino Student Kit](https://www.arduino.cc/education/student-kit). Legenda: 1) Campo magnetico 2) Campo elettrico 3) Direzione di Propagazione 4) Lunghezza d'onda</sub>
+
+Per riuscire a dimostrare questa teoria, *Heinrich Hertz*, ancora studente, divenne ossessionato dalla creazione di un esperimento. Nel 1887, creò un trasmettitore e un ricevitore elettrico. Il trasmettitore creava una scintilla elettrica che saltava tra due fili sotto tensione. La reazione che si creava è che il ricevitore emetteva una scintilla propria, anche se si trovava a diversi metri di distanza!
+Questo, ed altri esperimenti di *Hertz*, dimostrarono che l'energia elettromagnetica viaggiava attraverso lo spazio, sotto forma di onde. Ciò sollevò una domanda interessante: con quale mezzo le onde elettromagnetiche si propagano? Come le onde dell'oceano viaggiano attraverso l'acqua, e le onde sonore viaggiano attraverso l'aria, cosa accadeva per le onde elettromagnetiche?
+Ai tempi di *Hertz*, gli scienziati immaginarono un mezzo che chiamarono "etere luminifero". Ma nel 20° secolo, gli esperimenti dimostrarono che tale etere non esisteva. Oggi, gli scienziati credono che le onde elettromagnetiche semplicemente non abbiano necessità di un "mezzo" per propagarsi. Dalla scoperta di *Hertz*, però, emersero anche altri misteri profondi. Per esempio, si è scoperto che in alcune situazioni le onde si comportano invece come particelle. Tutt'oggi, molti aspetti di questi studi sono fortemente dibattuti.
+Sebbene le scoperte successive abbiano complicato il quadro, la scoperta di *Hertz* fu una svolta incredibile. Ma, come spesso accade, la sua importanza non fu totalmente compresa al momento, nemmeno dallo stesso *Hertz*. La sua scoperta alla fine portò alla creazione di strumenti come la radio, la televisione, al radar e molto altro ancora. Tuttavia, quando fu chiesto a *Hertz* l'utilità della sua scoperta, lui rispose: "Non serve a niente". Purtroppo, *Hertz* morì troppo giovane per vedere il suo immenso contributo alla tecnologia.
+
+![antenna.](assets/images/)
+<sub>Fonte immagine: [Arduino Student Kit](https://www.arduino.cc/education/student-kit). </sub>
+
+Ci sono voluti altri grandi geni per mettere in pratica la sua scoperta. L'inventore e uomo d'affari *Guglielmo Marconi*, ad esempio, si guadagnò il suo posto nella storia dimostrando che queste onde potevano essere utilizzate per comunicare. Andando contro il volere del padre, il giovane *Marconi* eseguì i suoi esperimenti. Le distanze alle quali riuscì ad inviare e ricevere le sue onde crebbero da pochi metri, alla distanza che attraversa un oceano.
+Come avrete intuito, *Marconi* fu il pioniere della trasmissione radiofonica. Ma, i primi investitori a mostrare interesse per i sistemi di trasmissione di *Marconi*, furono i corpi della Marina. La radio offriva, infatti, alle navi un miglior metodo di segnalazione, anche per l'invio di richieste d'aiuto.
+*Marconi* sviluppò anche un'altra tecnologia utile alla Marina: il **radar**. Le onde elettromagnetiche rimbalzano infatti su alcune superfici. Gli operatori radar inviano un impulso e quindi rilevano se le onde si riflettono e tornano indietro. Questa operazione rivela se ci sono o meno oggetti. È anche possibile calcolare la distanza da questo oggetto, misurando il tempo del ritorno.
+
+![radar.](assets/images/)
+<sub>Fonte immagine: [Arduino Student Kit](https://www.arduino.cc/education/student-kit). </sub>
+
 
 
  
