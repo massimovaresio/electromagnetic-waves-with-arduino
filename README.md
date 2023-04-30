@@ -156,6 +156,7 @@ Attraverso il monitor seriale dell'IDE Arduino possiamo osservare la misurazione
 ![screenshot-2](assets/images/screenshot-2.png)
 <sub>Fonte immagine: produzione propria dell'autore.</sub>
 
+
 > Un po' di storia... dal telegrafo alla fibra ottica.
 
 Il **telegrafo** fu il primo dispositivo in grado di trasmettere informazioni a lunghe distanze. I telegrafi inviavano messaggi su un filo di rame conduttivo utilizzando il codice Morse. In questo codice, ogni numero e ogni lettera dell'alfabeto sono rappresentati da una serie di punti e trattini. Questi punti e trattini erano trasmessi elettricamente, attraverso il filo, e ricevuti come clic e/o bip audio all'altra estremità.
