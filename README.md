@@ -29,14 +29,52 @@ Il sensore di luce è uno dei sensori più comunemente utilizzato oggigiorno. I 
 Un **fototransistor** è un componente elettronico che converte l'energia della luce in energia elettrica. In un certo senso, lavora in modo opposto ad un LED. Un LED, infatti, converte l'energia elettrica in energia luminosa. Quando gli elettroni fluiscono, vengono emesse particelle di luce chiamate fotoni e viene prodotta la luce. Se questo processo viene invertito, il LED diventa un fotodiodo e può essere utilizzato per rilevare la luce. Quando la luce lo colpisce, l'energia luminosa viene convertita in energia elettrica e viene prodotto un certo ammontare di corrente. Il problema però, è che la corrente prodotta da un fotodiodo è solitamente molto debole. Tuttavia, se si combina il fotodiodo con un transistor, si può amplificare la corrente e renderla utile per il circuito.
 
 ![fototransistor.](assets/images/)
-<sub>Fonte immagine: [Arduino Student Kit](https://www.arduino.cc/education/student-kit)</sub>
+<sub>Fonte immagine: [Arduino Student Kit](https://www.arduino.cc/education/student-kit).</sub>
 
 ### Schema elettrico
 ![schema-elettrico-1.](assets/images/)
-<sub>Fonte immagine: [Arduino Student Kit](https://www.arduino.cc/education/student-kit)</sub>
+<sub>Fonte immagine: [Arduino Student Kit](https://www.arduino.cc/education/student-kit).</sub>
 ![schema-elettrico-2.](assets/images/)
-<sub>Fonte immagine: [Arduino Student Kit](https://www.arduino.cc/education/student-kit)</sub>
+<sub>Fonte immagine: [Arduino Student Kit](https://www.arduino.cc/education/student-kit).</sub>
 
 Circuito costruito.
 ![circuito-1.](assets/images/)
-<sub>Fonte immagine: produzione propria dell'autore</sub>
+<sub>Fonte immagine: produzione propria dell'autore.</sub>
+
+### Misurazione della luce
+Inizieremo a scrivere il codice che controlla il circuito. Questo primo sketch consentirà di utilizzare il fototransistor come sensore per rilevare la luminosità o l'intensità della luce nella stanza. Per il momento, ci concentreremo solo sulla creazione del codice per il sensore di luce. Successivamente, aggiungeremo il codice per controllare il LED utilizzandolo come sorgente luminosa.
+
+```c++
+// nome dei pin della scheda Arduino utilizzati dal circuito
+const int sensorPin = A0;
+ 
+// variabili dichiarate
+int lightAmount = 0;
+
+void setup() {
+  // codice di installazione, eseguito una volta:
+
+  // avvia il monitor seriale
+  Serial.begin(9600);
+}
+
+void loop() {
+  // codice principale, eseguito ripetutamente:
+
+  // legge il sensore di luce e memorizza la misura in una variabile
+  lightAmount = analogRead(sensorPin);
+  
+  // informazioni di output al monitor seriale
+  Serial.print("Light Intensity: ");
+  Serial.println(lightAmount);
+  
+  delay(1000);
+}
+
+```
+![circuito-2.](assets/images/)
+<sub>Fonte immagine: produzione propria dell'autore.</sub>
+![circuito-3.](assets/images/)
+<sub>Fonte immagine: produzione propria dell'autore.</sub>
+![screenshot-1.](assets/images/)
+<sub>Fonte immagine: produzione propria dell'autore.</sub>
