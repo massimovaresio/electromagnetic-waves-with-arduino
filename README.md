@@ -28,19 +28,19 @@ Il sensore di luce è uno dei sensori più comunemente utilizzato oggigiorno. I 
 
 Un **fototransistor** è un componente elettronico che converte l'energia della luce in energia elettrica. In un certo senso, lavora in modo opposto ad un LED. Un LED, infatti, converte l'energia elettrica in energia luminosa. Quando gli elettroni fluiscono, vengono emesse particelle di luce chiamate fotoni e viene prodotta la luce. Se questo processo viene invertito, il LED diventa un fotodiodo e può essere utilizzato per rilevare la luce. Quando la luce lo colpisce, l'energia luminosa viene convertita in energia elettrica e viene prodotto un certo ammontare di corrente. Il problema però, è che la corrente prodotta da un fotodiodo è solitamente molto debole. Tuttavia, se si combina il fotodiodo con un transistor, si può amplificare la corrente e renderla utile per il circuito.
 
-![fototransistor.](assets/images/)
+![fototransistor](assets/images/fototransistor.png)
 <sub>Fonte immagine: [Arduino Student Kit](https://www.arduino.cc/education/student-kit).</sub>
 
 ### Schema elettrico
-![schema-elettrico-1.](assets/images/)
+![schema-elettrico-1](assets/images/schema-elettrico-1.png)
 <sub>Fonte immagine: [Arduino Student Kit](https://www.arduino.cc/education/student-kit).</sub>
 
-![schema-elettrico-2.](assets/images/)
+![schema-elettrico-2](assets/images/schema-elettrico-2.png)
 <sub>Fonte immagine: [Arduino Student Kit](https://www.arduino.cc/education/student-kit).</sub>
 
 Circuito costruito.
 
-![circuito-1.](assets/images/)
+![circuito-1](assets/images/circuito-1.jpg)
 <sub>Fonte immagine: produzione propria dell'autore.</sub>
 
 ### Misurazione della luce
@@ -74,13 +74,13 @@ void loop() {
 }
 
 ```
-![circuito-2.](assets/images/)
+![circuito-2](assets/images/circuito-2.jpg)
 <sub>Fonte immagine: produzione propria dell'autore.</sub>
 
-![circuito-3.](assets/images/)
+![circuito-3](assets/images/circuito-3-jpg)
 <sub>Fonte immagine: produzione propria dell'autore.</sub>
 
-![screenshot-1.](assets/images/)
+![screenshot-1](assets/images/screenshot-1.png)
 <sub>Fonte immagine: produzione propria dell'autore.</sub>
 
 ### Comunicazione ad onde luminose
@@ -150,17 +150,17 @@ void receiver (){
 ```
 Attraverso il monitor seriale dell'IDE Arduino possiamo osservare la misurazione del sensore di luce. Puntiamo il sensore di luce verso il LED blu e osserviamo la lettura dal monitor seriale mentre il LED si accende e si spegne. Possiamo notare che avvicinando il sensore (fototransistor) al LED acceso aumenta l'intensità della luce. L'aumento è chiaramente visibile nelle misurazioni sul monitor seriale.
 
-![circuito-4.](assets/images/)
+![circuito-4](assets/images/circuito-4.jpg)
 <sub>Fonte immagine: produzione propria dell'autore.</sub>
 
-![screenshot-2.](assets/images/)
+![screenshot-2](assets/images/screenshot-2.png)
 <sub>Fonte immagine: produzione propria dell'autore.</sub>
 
 > Un po' di storia... dal telegrafo alla fibra ottica.
 
 Il **telegrafo** fu il primo dispositivo in grado di trasmettere informazioni a lunghe distanze. I telegrafi inviavano messaggi su un filo di rame conduttivo utilizzando il codice Morse. In questo codice, ogni numero e ogni lettera dell'alfabeto sono rappresentati da una serie di punti e trattini. Questi punti e trattini erano trasmessi elettricamente, attraverso il filo, e ricevuti come clic e/o bip audio all'altra estremità.
 
-![codice-morse.](assets/images/)
+![codice-morse](assets/images/codice-morse.png)
 <sub>Fonte immagine: [Arduino Student Kit](https://www.arduino.cc/education/student-kit).</sub>
 
 La fibra ottica funziona secondo lo stesso principio di base di un telegrafo. Tuttavia, con la fibra ottica, i dati vengono trasferiti con la luce attraverso un cavo costituito da sottili fili di vetro, anziché un segnale elettrico attraverso un filo di rame. Utilizzando questa codifica digitale, anziché il codice Morse, i cavi in fibra ottica possono trasmettere migliaia di telefonate, pagine Web, video, canzoni e qualsiasi media, in pochissimo tempo.
@@ -172,7 +172,7 @@ Il circuito appena costruito è molto simile a un sistema a fibra ottica ma con 
 La NASA utilizza un sistema simile al circuito appena costruito per misurare la distanza dalla Luna. Nel 1969, quando Neil Armstrong e Buzz Aldrin approdarono sulla Luna lasciarono qualcosa di più delle loro impronte nella polvere lunare. Si lasciarono infatti alle spalle un pannello catarifrangente per un esperimento con raggi laser - fondamentalmente, uno specchio puntato sulla Terra.
 Tornati sulla Terra, con un forte laser puntato sullo specchio inviarono impulsi di luce che sfrecciano nello spazio alla velocità della luce. La luce laser si riflette così dallo specchio e ritorna sulla Terra, che viene rilevata dai telescopi. Usando la velocità della luce e il tempo impiegato dall'impulso laser per viaggiare fino alla Luna e ritorno, gli scienziati possono determinare con precisione la distanza tra la Terra e la Luna.
 
-![nasa-luna.](assets/images/)
+![nasa-luna](assets/images/nasa-luna.png)
 <sub>Fonte immagine: [Arduino Student Kit](https://www.arduino.cc/education/student-kit).</sub>
 
 ## Lo stato attuale della fibra ottica in Italia
@@ -190,7 +190,7 @@ Non si tratta ovviamente di contribuiti isolati... Molti altri scienziati hanno 
 
 A partire dall'epoca di *Faraday* si fece strada una nuova immagine dell'universo. Gli scienziati avevano iniziato a sospettare, infatti, che le forze dell'elettricità e del magnetismo (insieme chiamate energia elettromagnetica) viaggiassero attraverso lo spazio come onde invisibili.
 
-![onda-elettromagnetica.](assets/images/)
+![onda-elettromagnetica](assets/images/onda-elettromagnetica.png)
 <sub>Fonte immagine: [Arduino Student Kit](https://www.arduino.cc/education/student-kit). Legenda: 1) Campo magnetico 2) Campo elettrico 3) Direzione di Propagazione 4) Lunghezza d'onda</sub>
 
 Per riuscire a dimostrare questa teoria, *Heinrich Hertz*, ancora studente, divenne ossessionato dalla creazione di un esperimento. Nel 1887, creò un trasmettitore e un ricevitore elettrico. Il trasmettitore creava una scintilla elettrica che saltava tra due fili sotto tensione. La reazione che si creava è che il ricevitore emetteva una scintilla propria, anche se si trovava a diversi metri di distanza!
@@ -198,21 +198,21 @@ Questo, ed altri esperimenti di *Hertz*, dimostrarono che l'energia elettromagne
 Ai tempi di *Hertz*, gli scienziati immaginarono un mezzo che chiamarono "etere luminifero". Ma nel 20° secolo, gli esperimenti dimostrarono che tale etere non esisteva. Oggi, gli scienziati credono che le onde elettromagnetiche semplicemente non abbiano necessità di un "mezzo" per propagarsi. Dalla scoperta di *Hertz*, però, emersero anche altri misteri profondi. Per esempio, si è scoperto che in alcune situazioni le onde si comportano invece come particelle. Tutt'oggi, molti aspetti di questi studi sono fortemente dibattuti.
 Sebbene le scoperte successive abbiano complicato il quadro, la scoperta di *Hertz* fu una svolta incredibile. Ma, come spesso accade, la sua importanza non fu totalmente compresa al momento, nemmeno dallo stesso *Hertz*. La sua scoperta alla fine portò alla creazione di strumenti come la radio, la televisione, al radar e molto altro ancora. Tuttavia, quando fu chiesto a *Hertz* l'utilità della sua scoperta, lui rispose: "Non serve a niente". Purtroppo, *Hertz* morì troppo giovane per vedere il suo immenso contributo alla tecnologia.
 
-![antenna.](assets/images/)
+![antenna](assets/images/antenna.png)
 <sub>Fonte immagine: [Arduino Student Kit](https://www.arduino.cc/education/student-kit). </sub>
 
 Ci sono voluti altri grandi geni per mettere in pratica la sua scoperta. L'inventore e uomo d'affari *Guglielmo Marconi*, ad esempio, si guadagnò il suo posto nella storia dimostrando che queste onde potevano essere utilizzate per comunicare. Andando contro il volere del padre, il giovane *Marconi* eseguì i suoi esperimenti. Le distanze alle quali riuscì ad inviare e ricevere le sue onde crebbero da pochi metri, alla distanza che attraversa un oceano.
 Come avrete intuito, *Marconi* fu il pioniere della trasmissione radiofonica. Ma, i primi investitori a mostrare interesse per i sistemi di trasmissione di *Marconi*, furono i corpi della Marina. La radio offriva, infatti, alle navi un miglior metodo di segnalazione, anche per l'invio di richieste d'aiuto.
 *Marconi* sviluppò anche un'altra tecnologia utile alla Marina: il **radar**. Le onde elettromagnetiche rimbalzano infatti su alcune superfici. Gli operatori radar inviano un impulso e quindi rilevano se le onde si riflettono e tornano indietro. Questa operazione rivela se ci sono o meno oggetti. È anche possibile calcolare la distanza da questo oggetto, misurando il tempo del ritorno.
 
-![radar.](assets/images/)
+![radar](assets/images/radar.png)
 <sub>Fonte immagine: [Arduino Student Kit](https://www.arduino.cc/education/student-kit). </sub>
 
 Mentre *Hertz* non visse sufficientemente a lungo per comprendere e godere a pieno del suo contributo scientifico, *Marconi* divenne sinonimo di radio già ai suoi tempi. Qualche anno dopo, un altro innovatore ottenne grande fama, anche se non per le sue importanti invenzioni. Nonostante *Hedy Lamarr* fosse una star del cinema di fama mondiale, pochi infatti conoscevano le sue invenzioni. *Lamarr* progettò un miglioramento del semaforo, suggerì modifiche alla progettazione di velivoli sperimentali e, in particolare, contribuì alla tecnologia a spettro espanso.
 Durante la Seconda Guerra Mondiale, *Lamarr* venne a sapere che i siluri americani, pilotati da onde radio, potevano essere bloccati dalle imbarcazioni nemiche. Le barche emettevano infatti un segnale radio opposto, che confondeva il siluro. Lavorò quindi insieme ad un pianista (*George Antheil*) per sviluppare un sistema di guida ad onde radio, che variasse da una frequenza all'altra. Il segnale, che continuava a modificarsi, era molto più difficile da bloccare. Utilizzarono un rullo di un pianoforte per selezionare le frequenze di comunicazione. Di conseguenza, il loro sistema offriva 88 frequenze, proprio come gli 88 tasti che ci sono su di un pianoforte.
 All'inizio i militari non furono interessati a questa tecnologia a spettro espanso, anche se decenni dopo, ne fecero largo uso. Non solo questo però, la tecnica aprì la strada alla tecnologia oggi utilizzata nelle comunicazioni via cellulare e **Wi-Fi**.
 
-![wi-fi.](assets/images/)
+![wi-fi](assets/images/wi-fi.png)
 <sub>Fonte immagine: [Arduino Student Kit](https://www.arduino.cc/education/student-kit). </sub>
 
 ## Parte 2 - Radar di onde luminose
@@ -228,15 +228,15 @@ Sebbene la maggior parte dei sistemi radar utilizzino le onde radio per tracciar
 - cavi jumper aggiuntivi
 
 ### Schema elettrico
-![schema-elettrico-3.](assets/images/)
+![schema-elettrico-3](assets/images/schema-elettrico-3.png)
 <sub>Fonte immagine: [Arduino Student Kit](https://www.arduino.cc/education/student-kit).</sub>
 
-![schema-elettrico-4.](assets/images/)
+![schema-elettrico-4](assets/images/schema-elettrico-4.png)
 <sub>Fonte immagine: [Arduino Student Kit](https://www.arduino.cc/education/student-kit).</sub>
 
 Circuito costruito con servo motore.
 
-![circuito-5.](assets/images/)
+![circuito-5](assets/images/circuito-5.jpg)
 <sub>Fonte immagine: produzione propria dell'autore.</sub>
 
 ### Scansione manuale della luce
@@ -332,19 +332,19 @@ void loop() {
 I commenti inseriti nel codice dovremmo aiutare il lettore a comprendere ogni passaggio dell'esperimento. Nelle immagini e negli screenshot seguenti viene rappresentato cosa succede al circuito e le misurazioni visibili nel monitor seriale durante l'esecuzione del codice.
 Nell'ultima immagine si vedrà l'accensione del LED che segnala il raggiungimento del limite dell'angolo del servo.
 
-![circuito-6.](assets/images/)
+![circuito-6](assets/images/circuito-6.jpg)
 <sub>Fonte immagine: produzione propria dell'autore.</sub>
 
-![screenshot-3.](assets/images/)
+![screenshot-3](assets/images/screenshot-3.png)
 <sub>Fonte immagine: produzione propria dell'autore.</sub>
 
-![circuito-7.](assets/images/)
+![circuito-7](assets/images/circuito-7.jpg)
 <sub>Fonte immagine: produzione propria dell'autore.</sub>
 
-![screenshot-4.](assets/images/)
+![screenshot-4](assets/images/screenshot-4.png)
 <sub>Fonte immagine: produzione propria dell'autore.</sub>
 
-![circuito-8.](assets/images/)
+![circuito-8](assets/images/circuito-8.jpg)
 <sub>Fonte immagine: produzione propria dell'autore. Nota: il LED è accesso perchè il servo ha raggiunto il limite dell'angolo di 180°.</sub>
 
 Spero che il progetto sia piaciuto ai lettori. Grazie :grin:
