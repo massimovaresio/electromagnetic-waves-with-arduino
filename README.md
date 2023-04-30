@@ -34,6 +34,7 @@ Un **fototransistor** è un componente elettronico che converte l'energia della 
 ### Schema elettrico
 ![schema-elettrico-1.](assets/images/)
 <sub>Fonte immagine: [Arduino Student Kit](https://www.arduino.cc/education/student-kit).</sub>
+
 ![schema-elettrico-2.](assets/images/)
 <sub>Fonte immagine: [Arduino Student Kit](https://www.arduino.cc/education/student-kit).</sub>
 
@@ -74,7 +75,9 @@ void loop() {
 ```
 ![circuito-2.](assets/images/)
 <sub>Fonte immagine: produzione propria dell'autore.</sub>
+
 ![circuito-3.](assets/images/)
 <sub>Fonte immagine: produzione propria dell'autore.</sub>
+
 ![screenshot-1.](assets/images/)
 <sub>Fonte immagine: produzione propria dell'autore.</sub>
