@@ -89,4 +89,73 @@ A differenza delle onde radio, che possono viaggiare attraverso l'aria e persino
 
 In questa attività, utilizzeremo un LED e un sensore di luce per simulare l'invio di informazioni attraverso onde luminose. Il LED inserito nel circuito funzionerà come una sorgente luminosa lampeggiante. Puntando il sensore di luce sul LED osserveremo come il sensore reagisce alla luce lampeggiante, correlando questo comportamento alla tecnologia in fibra ottica e alla trasmissione di informazioni attraverso le onde luminose.
 
+All'interno dello sketch utilizzeremo il timer di Arduino per due diverse attività: la prima è quella di accendere e spegnere il LED per un certo periodo di tempo, la seconda è quella di eseguire misurazioni grazie al sensore di luce a determinati intervalli di tempo. Per accendere e spegnere il LED usiamo una variabile che attiva o disattiva il suo stato. Nel `void loop()` eseguiremo due compiti: il primo è quello di creare un trasmettitore che faccia lampeggiare la luce, il secondo è quello di creare un ricevitore che la rilevi. Le porzioni di codice saranno implementate mediante le funzioni `transmitter()` e `receiver()`.
+
+```c++
+// nome dei pin della scheda Arduino utilizzati dal circuito
+const int sensorPin = A0;
+const int LEDPin = 10;
+ 
+// variabili dichiarate
+int lightAmount = 0; // memorizza il valore analogico dal sensore di luce
+long timerLED = 0;
+long timerSensor = 0;
+int toggleLED = 0;
+
+void setup() {
+  // codice di installazione, eseguito una volta:
+
+  pinMode(LEDPin, OUTPUT);
+
+  // avvia il monitor seriale
+  Serial.begin(9600);
+
+}
+
+void loop() {
+  // codice principale, eseguito ripetutamente:
+
+  transmitter ();
+
+  receiver ();
+
+}
+
+void transmitter (){
+    // codice per la trasmissione di un segnale a intervalli di 4 secondi
+    if (millis() >= timerLED + 2000) {
+      toggleLED = !toggleLED;
+      digitalWrite(LEDPin, toggleLED);
+      timerLED = millis();
+  }
+
+}
+
+void receiver (){
+  // codice per ricevere segnali ogni 1000 millisecondi
+  if (millis() >= timerSensor + 1000) {
+
+    // legge il sensore di luce e memorizza la misura in una variabile
+    lightAmount = analogRead(sensorPin);
+
+    // informazioni di output al monitor seriale
+    Serial.print("Light Intensity: ");
+    Serial.println(lightAmount);
+
+    timerSensor = millis();
+    
+  }
+}
+
+```
+Attraverso il monitor seriale dell'IDE Arduino possiamo osservare la misurazione del sensore di luce. Puntiamo il sensore di luce verso il LED blu e osserviamo la lettura dal monitor seriale mentre il LED si accende e si spegne. Possiamo notare che avvicinando il sensore (fototransistor) al LED acceso aumenta l'intensità della luce. L'aumento è chiaramente visibile nelle misurazioni sul monitor seriale.
+
+![circuito-4.](assets/images/)
+<sub>Fonte immagine: produzione propria dell'autore.</sub>
+
+![screenshot-2.](assets/images/)
+<sub>Fonte immagine: produzione propria dell'autore.</sub>
+
+
+
  
