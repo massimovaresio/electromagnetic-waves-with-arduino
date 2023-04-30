@@ -352,6 +352,8 @@ Nell'ultima immagine si vedrà l'accensione del LED che segnala il raggiungiment
 
 Spero che il progetto sia piaciuto ai lettori. Grazie :grin:
 
+theme: minima
+
 
 
 
