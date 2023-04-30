@@ -175,7 +175,7 @@ Tornati sulla Terra, con un forte laser puntato sullo specchio inviarono impulsi
 ![nasa-luna.](assets/images/)
 <sub>Fonte immagine: [Arduino Student Kit](https://www.arduino.cc/education/student-kit).</sub>
 
-## Parte 1 - Sensore di luminosità
+## Lo stato attuale della fibra ottica in Italia
 Inserire testo articolo.
 
 ## Invenzioni importanti
@@ -214,6 +214,30 @@ All'inizio i militari non furono interessati a questa tecnologia a spettro espan
 
 ![wi-fi.](assets/images/)
 <sub>Fonte immagine: [Arduino Student Kit](https://www.arduino.cc/education/student-kit). </sub>
+
+## Parte 2 - Radar di onde luminose
+Oltre alla comunicazione, le onde elettromagnetiche vengono oggi utilizzate in vari modi. I forni a microonde riscaldano il cibo emettendo appunto microonde dirette al cibo. Le onde a infrarossi vengono utilizzate nei telecomandi per controllare ad esempio i televisori. I raggi gamma sono spesso usati come forma di trattamento per uccidere le cellule tumorali. I controllori del traffico aereo utilizzano le onde radar e radio per mappare la posizione degli aerei nel cielo e gestire il flusso degli aerei che entrano e escono dagli aeroporti.
+
+Sebbene la maggior parte dei sistemi radar utilizzino le onde radio per tracciare gli oggetti, alcuni sistemi chiamati lidar usano la luce laser. Come i sistemi radar, i sistemi lidar vengono utilizzati per creare mappe con la distanza dagli oggetti. Tuttavia, non utilizzeremo i laser in questa attività; creeremo e programmeremo un dispositivo che rileva la luce più o meno allo stesso modo in cui il radar rileva le onde radio o il lidar rileva la luce laser. Il nostro radar a onde luminose utilizzerà un servo motore per puntare il fototransistor nella stanza, misurando l'intensità della luce.
+
+### Componenti necessari
+- 1 circuito sensore di luminosità dell'esperimento precedente
+- 1 condensatore 100 microfarad
+- 1 servomotore
+- nastro adesivo
+- cavi jumper aggiuntivi
+
+### Schema elettrico
+![schema-elettrico-3.](assets/images/)
+<sub>Fonte immagine: [Arduino Student Kit](https://www.arduino.cc/education/student-kit).</sub>
+
+![schema-elettrico-4.](assets/images/)
+<sub>Fonte immagine: [Arduino Student Kit](https://www.arduino.cc/education/student-kit).</sub>
+
+Circuito costruito con servo motore.
+
+![circuito-5.](assets/images/)
+<sub>Fonte immagine: produzione propria dell'autore.</sub>
 
 
 
