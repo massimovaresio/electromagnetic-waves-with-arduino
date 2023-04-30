@@ -208,6 +208,14 @@ Come avrete intuito, *Marconi* fu il pioniere della trasmissione radiofonica. Ma
 ![radar.](assets/images/)
 <sub>Fonte immagine: [Arduino Student Kit](https://www.arduino.cc/education/student-kit). </sub>
 
+Mentre *Hertz* non visse sufficientemente a lungo per comprendere e godere a pieno del suo contributo scientifico, *Marconi* divenne sinonimo di radio già ai suoi tempi. Qualche anno dopo, un altro innovatore ottenne grande fama, anche se non per le sue importanti invenzioni. Nonostante *Hedy Lamarr* fosse una star del cinema di fama mondiale, pochi infatti conoscevano le sue invenzioni. *Lamarr* progettò un miglioramento del semaforo, suggerì modifiche alla progettazione di velivoli sperimentali e, in particolare, contribuì alla tecnologia a spettro espanso.
+Durante la Seconda Guerra Mondiale, *Lamarr* venne a sapere che i siluri americani, pilotati da onde radio, potevano essere bloccati dalle imbarcazioni nemiche. Le barche emettevano infatti un segnale radio opposto, che confondeva il siluro. Lavorò quindi insieme ad un pianista (*George Antheil*) per sviluppare un sistema di guida ad onde radio, che variasse da una frequenza all'altra. Il segnale, che continuava a modificarsi, era molto più difficile da bloccare. Utilizzarono un rullo di un pianoforte per selezionare le frequenze di comunicazione. Di conseguenza, il loro sistema offriva 88 frequenze, proprio come gli 88 tasti che ci sono su di un pianoforte.
+All'inizio i militari non furono interessati a questa tecnologia a spettro espanso, anche se decenni dopo, ne fecero largo uso. Non solo questo però, la tecnica aprì la strada alla tecnologia oggi utilizzata nelle comunicazioni via cellulare e **Wi-Fi**.
+
+![wi-fi.](assets/images/)
+<sub>Fonte immagine: [Arduino Student Kit](https://www.arduino.cc/education/student-kit). </sub>
+
+
 
 
  
