@@ -354,6 +354,9 @@ Nell'ultima immagine si vedrà l'accensione del LED che segnala il raggiungiment
 
 Spero che il progetto sia piaciuto ai lettori. Grazie :grin:
 
+*Il progetto e tutta la documentazione allegata sono tutelati dalla legge sul diritto d’autore (Legge 633/1941); il materiale può essere utilizzato nei termini di licenza 
+[CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).*
+
 
 
 
